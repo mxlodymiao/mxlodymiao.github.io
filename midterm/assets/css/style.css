@@ -1,0 +1,292 @@
+/* VARIABLES */
+:root {
+    --primary-color: #E9A904;
+    --secondary-color:#1E1E1E ;
+  }
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Define the CSS rule for the section with the background image */
+.home {
+  height: 800px;
+  background-image: url("../img/A1.jpg"); /* URL to your background image */
+  background-size: cover; /* Scale the image to cover the entire section */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-position: center center; /* Center the image horizontally and vertically */
+  color: white; /* Set the text color for better readability */
+}
+
+.menu-home {
+  height: 800px;
+  background-image: url("../img/B1.jpg"); /* URL to your background image */
+  background-size: cover; /* Scale the image to cover the entire section */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-position: center center; /* Center the image horizontally and vertically */
+  color: white; /* Set the text color for better readability */
+}
+
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  width: 100vw;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 10px 30px;
+}
+
+#navbar ul a {
+  display: inline-block;
+  margin: 30px 30px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+#selected-page {
+  color: var(--primary-color);
+  border-bottom: 5px solid var(--primary-color);
+  font-weight: bolder;
+}
+
+#navbar ul a:hover {
+  opacity: 70%;
+  transform: translateY(-5px);
+  transition: transform .5s;
+}
+
+.home .container {
+  display: block;
+}
+
+.home .container .title {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 64px; /* Set the font size for the text */
+  padding-left: 130px;
+  margin: 0;
+}
+
+.home .container .vertical-line {
+  position: absolute;
+  bottom: 75px;
+  width: 5px; /* Set the width of the vertical line */
+  height: 260px;
+  background-color: var(--primary-color); /* Line color */
+  margin-left: 100px; /* Adjust the space between the line and headers */
+}
+
+.menu-home .container {
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 64px; /* Set the font size for the text */
+}
+
+.menu-home .container .title {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 64px; /* Set the font size for the text */
+  top: 130px;
+}
+
+.menu-home #title1 {
+  border-bottom: 5px solid var(--primary-color);
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.home .container .title {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 64px; /* Set the font size for the text */
+  padding-right: 130px;
+
+}
+
+.order-online {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container {
+  width: 70px; /* Set the width to 70 pixels */
+  height: 70px; /* Set the height to 70 pixels */
+  margin: 50px 0 20px 0; /* Add padding to the container (adjust as needed) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  max-width: 100%; /* Set a maximum width of 100% to maintain the aspect ratio */
+  max-height: 100%; /* Set a maximum height of 100% to maintain the aspect ratio */
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 12px 20px 10px 20px;
+  margin: 20px 0;
+  border-radius: 30px; /* Adjust the border-radius to control the roundness */
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  transition: transform .5s;
+}
+
+.menu {
+  position: relative;
+  text-align: center;
+  margin-top: 400px;
+  margin-bottom: 900px;
+}
+
+.menu-container {
+  position: relative;
+  max-width: 100%; /* Ensure the section's width does not exceed the viewport */
+  margin: 0 auto; /* Center the section horizontally */
+}
+
+.menu-dish {
+  position: absolute;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.left {
+  left: -200px;
+  top: -250px;
+}
+
+.right {
+  right: 0;
+  top: -250px;
+}
+
+.selected-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 560px;
+  max-height: 560px;
+}
+
+.text-container {
+  position: absolute;
+  text-align: center;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu h2 {
+  color: var(--primary-color);
+}
+
+h2, p {
+  margin: 10px 0;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding-top: 10px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+footer h3 {
+  font-size: 32px;
+  padding-left: 100px;
+  padding-right: 329px;
+}
+
+.footer-text {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+footer p {
+  font-size: 18px;
+  line-height: 10px;
+}
+
+#footer-img {
+  max-width: 300px;
+  max-height: 300px;
+  right: 0;
+  padding-top: 20px;
+}
+
+.column {
+  padding-right: 100px;
+}
+
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* Adjust the gap between items as needed */
+  padding: 100px 150px;
+}
+
+.menu-item {
+  text-align: center;
+}
+
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu-item .item-name {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 16px;
+  font-size: 28px;
+}
+
+.menu-item .item-price {
+  font-size: 24px;
+}
