@@ -14,7 +14,7 @@
     background-color: rgb(252, 186, 3, .1);
 }
 
-.sidebarCircle {
+.sidebar-circle {
     width: 12px;
     height: 12px;
     border: 2px solid #fff;
@@ -31,16 +31,9 @@
     right: 32px;
 }
 
-.sidebarCircle1.active {
+.sidebar-circle-1:hover::before {
     background-color: #FFF;
-}
-
-.sidebarCircle2.active {
-    background-color: #FFF;
-}
-
-.sidebarCircle3.active {
-    background-color: #FFF;
+    opacity: 60%;
 }
 
 section {
